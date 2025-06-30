@@ -2,6 +2,11 @@
 
 A minimal Spring Boot application for aggregating news from multiple sources.
 
+Use this repository as a [**template**](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) to generate repo in your account and make an assignment in it.
+
+Create a **new** branch, make the task in it, then make a **Pull Request** to the **Master** branch, so we are able to review it and leave some comments if needed.
+
+
 ## Prerequisites
 
 - Java 17 or higher
