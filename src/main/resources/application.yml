@@ -6,7 +6,7 @@ spring:
     name: news-aggregator
   
   datasource:
-    url: jdbc:h2:mem:testdb
+    url: jdbc:h2:file:./data/newsdb
     driver-class-name: org.h2.Driver
     username: sa
     password: 
@@ -19,8 +19,8 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: create-drop
-    show-sql: false #change to true if need
+      ddl-auto: update
+    show-sql: true #change to true if needed
     properties:
       hibernate:
         format_sql: true

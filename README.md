@@ -35,7 +35,7 @@ Create a **new** branch, make the task in it, then make a **Pull Request** to th
 2. Use these **exact** connection settings:
    - **Saved Settings**: Generic H2 (Embedded)
    - **Driver Class**: `org.h2.Driver`
-   - **JDBC URL**: `jdbc:h2:mem:testdb`
+   - **JDBC URL**: `jdbc:h2:file:./data/newsdb`
    - **User Name**: `sa`
    - **Password**: (leave empty)
 3. Click "Connect"
@@ -91,5 +91,7 @@ Implement news aggregation in `NewsAggregatorServiceImpl.java`:
 
 ## Database
 
-- Uses H2 in-memory database (data resets on restart)
-- There is an existing News table schema, but you can modify it if needed.
+- Uses H2 file-based database
+- Database files are stored in `./data/newsdb.mv.db`
+- The existing News table schema will be automatically created on first run
+- You can modify the schema as needed, but be aware that changes may require manual migration
